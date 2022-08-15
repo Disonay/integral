@@ -2,13 +2,13 @@ package integral;
 
 import java.util.concurrent.Callable;
 
-public class SmallInterval implements Callable<Double> {
+public class SmallIntegral implements Callable<Double> {
     private final double a;
     private final double b;
 
     private final double eps;
 
-    public SmallInterval(double a, double b, double eps) {
+    public SmallIntegral(double a, double b, double eps) {
         this.a = a;
         this.b = b;
         this.eps = eps;

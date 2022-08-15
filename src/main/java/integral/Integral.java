@@ -31,7 +31,7 @@ public class Integral {
 
         double step = (b-a) / n;
         for (int i = 0; i < n; i++) {
-            futures.add(executor.submit(new SmallInterval(a + i*step, a + (i+1)*step, eps)));
+            futures.add(executor.submit(new SmallIntegral(a + i*step, a + (i+1)*step, eps)));
         }
 
         Double result = futures.stream().map(x -> {
